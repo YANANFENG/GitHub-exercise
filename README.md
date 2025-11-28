@@ -2,14 +2,19 @@
 
 This repository contains Python code for analysing biological sequences using Biopython. It is intended to be used in a practical to demonstrate core Git and GitHub skills, including version control, branching, and working with remote repositories. Students modify and extend the scripts to fix bugs, add new features, and practise good coding workflows.
 
+### **Repository Structure**
+
+| File          | Description                                           |
+|---------------|--------------------------------------------------------|
+| `translate.py` | Main script for ORF detection and translation (Contains intentional bugs ⚠️) |
+| `README.md`    | Project documentation                                |
+
+
 ### **Features**
 
 - Reads and processes DNA sequences from FASTA files
-
 - Identifies open reading frames
-
 - Translates sequences into proteins
-
 - Computes sequence statistics and stores them in a pandas DataFrame
 
 ### **Installation**
