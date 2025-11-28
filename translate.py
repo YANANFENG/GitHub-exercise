@@ -4,7 +4,7 @@ from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
 from scipy.stats import linregress
-
+import matplotlib.pyplot as plt
 # -----------------------------
 # Read sequences
 # -----------------------------
@@ -95,6 +95,17 @@ for record in aa_sequences:
 df = pd.DataFrame(results)
 print(df.head())
 
+
+# -----------------------------
+# Plotting
+# -----------------------------
+plt.figure()
+plt.scatter(df['length'], df['molecular_weight'])
+plt.xlabel('Sequence Length')
+plt.ylabel('Molecular Weight')
+plt.title('Sequence Length vs Molecular Weight')
+plt.savefig("plot.png")
+print("Plot saved as plot.png")
 # -----------------------------
 # END
 # -----------------------------
